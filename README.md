@@ -14,7 +14,7 @@
 
  ## 演示
 
-![vue-lCalendar-switch]()
+![vue-lCalendar-switch](https://raw.githubusercontent.com/duanxb/vue-calendar-switch/master/lcalendar-switch.gif)
 
 #### Code DEMO
 ```html
