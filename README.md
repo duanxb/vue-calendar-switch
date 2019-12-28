@@ -20,21 +20,32 @@
 ```html
 <input type="text" placeholder="请选择日期区间" ref="calendar" unselectable="on" onfocus="this.blur()" readonly="readonly" class="inputstyle" v-model="appoint_datetime">
 ```
+```
+npm install calendarSwitch
+
+//main.js
+import calendarSwitch from './plugin/calendarSwitch'
+
+Vue.prototype.$calendarSwitch = calendarSwitch;
+
+```
 ```javascript
-//this -> vue
-this.$calendarSwitch({
-	element: this.$refs.calendar,
-	monthSize: monthSizeArr.length || 4,
-	minDate: minDate,
-	maxDate: maxDate,
-	onSuccess: function(res) {
-		$vm.fileds.appoint_start = res.start_date;
-		$vm.fileds.appoint_end = res.end_date;
-	},
-	onError: function(msg) {
-		$vm._validFormTip(msg);
-	}
-});
+//methods中使用
+initCalendar() {
+	this.$calendarSwitch({
+		element: this.$refs.calendarTigger,
+		monthSize: 2,
+		minDate: '2019-12-01',
+		maxDate: '2020-05-03',
+		onSuccess: (data) => {
+			this.dateSpace = data.start_date +'~'+ data.end_date;
+			console.log(this.dateSpace);
+		},
+		onError: function(msg) {
+			console.log(msg)
+		}
+	});
+}
 ```
 
 ## 参数
