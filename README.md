@@ -1,4 +1,4 @@
-# vue-lCalendar-switch
+# vue-calendar-switch
 
 移动端区间日期选择器
 
@@ -14,7 +14,7 @@
 
  ## 演示
 
-![vue-lCalendar-switch](https://raw.githubusercontent.com/duanxb/vue-calendar-switch/master/lcalendar-switch.gif)
+![vue-calendar-switch](https://raw.githubusercontent.com/duanxb/vue-calendar-switch/master/lcalendar-switch.gif)
 
 #### Code DEMO
 ```html

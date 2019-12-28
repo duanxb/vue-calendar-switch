@@ -1,6 +1,6 @@
 {
-  "name": "calendarswitch",
-  "version": "1.0.0",
+  "name": "vue-calendar-switch",
+  "version": "1.0.3",
   "description": "选择日期区间的Vue组件",
   "main": "index.js",
   "directories": {

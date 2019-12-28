@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "calendarswitch": "^1.0.0",
     "core-js": "^3.4.3",
     "vue": "^2.6.10"
   },

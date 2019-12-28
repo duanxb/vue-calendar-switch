@@ -1,4 +1,4 @@
-# vue-lCalendar-switch
+# vue-calendar-switch
 
 移动端区间日期选择器
 
@@ -14,11 +14,11 @@
 
  ## 演示
 
-![vue-lCalendar-switch](https://raw.githubusercontent.com/duanxb/vue-calendar-switch/master/lcalendar-switch.gif)
+![vue-calendar-switch](https://raw.githubusercontent.com/duanxb/vue-calendar-switch/master/lcalendar-switch.gif)
 
 ## 安装
 ```
-npm install calendarSwitch
+npm install vue-calendar-switch
 
 ```
 ## 引用
@@ -26,11 +26,14 @@ npm install calendarSwitch
 ```javascript
 
 //main.js
-import calendarSwitch from 'calendarSwitch'
+import calendarSwitch from 'vue-calendar-switch'
 
 Vue.prototype.$calendarSwitch = calendarSwitch;
 
 ```
+
+## 使用
+
 ```html
 <input type="text" placeholder="请选择日期区间" ref="calendar" unselectable="on" onfocus="this.blur()" readonly="readonly" class="inputstyle" v-model="appoint_datetime">
 ```
