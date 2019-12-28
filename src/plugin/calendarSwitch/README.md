@@ -16,18 +16,23 @@
 
 ![vue-lCalendar-switch](https://raw.githubusercontent.com/duanxb/vue-calendar-switch/master/lcalendar-switch.gif)
 
-#### Code DEMO
-```html
-<input type="text" placeholder="请选择日期区间" ref="calendar" unselectable="on" onfocus="this.blur()" readonly="readonly" class="inputstyle" v-model="appoint_datetime">
-```
+## 安装
 ```
 npm install calendarSwitch
+
+```
+## 引用
+
+```javascript
 
 //main.js
 import calendarSwitch from 'calendarSwitch'
 
 Vue.prototype.$calendarSwitch = calendarSwitch;
 
+```
+```html
+<input type="text" placeholder="请选择日期区间" ref="calendar" unselectable="on" onfocus="this.blur()" readonly="readonly" class="inputstyle" v-model="appoint_datetime">
 ```
 ```javascript
 //methods中使用
